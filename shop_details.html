@@ -83,7 +83,7 @@
                       <div class="tab-content mx-3" >
                         <div class="tab-pane fade show active" id="paying_taxes">
                             <h3>one stop solution to pay your bill $ govt. services</h3>
-                            <form action="#">                            
+                            <form action="#" name="payInformation">                            
                                 <div class="col-12">
                                     <select class="form-select bill_type" autocomplete="off" >
                                         <option selected="">Bill Type</option>
@@ -97,8 +97,8 @@
                                         <option value="others">Others</option>
                                       </select>
                                 </div>
-                                <div class="col-12">
-                                    <select class="form-select">
+                                 <div class="col-12">
+                                    <select class="form-select distic" autocomplete="off">
                                         <option selected="">Select Your Distic</option>
                                         <option>Dhaka</option>
                                         <option>Barisal</option>
@@ -106,62 +106,64 @@
                                     </select>
                                 </div>
                                 <div class="col-12">
-                                    <select class="form-select" autocomplete="off">
+                                    <select class="form-select upozila" autocomplete="off">
                                         <option selected="">Select Upozila</option>
                                         <option>Upozila-1</option>
                                         <option>Upozila-2</option>
                                         <option>Upozila-3</option>
                                       </select>
                                 </div>
+                               
                                 <div class="col-12">
-                                    <select class="form-select" autocomplete="of">
+                                    <select class="form-select union" autocomplete="off">
                                         <option selected="">Select Union</option>
                                         <option>Union-1</option>
                                         <option>Union-2</option>
                                         <option>Union-3</option>
                                       </select>
                                 </div>
-                                <div class="col-12">
-                                    <select class="form-select" autocomplete="off">
+                                 <div class="col-12">
+                                    <select class="form-select ward" autocomplete="off">
                                         <option selected="">Select Ward</option>
                                         <option>Ward-1</option>
                                         <option>Ward-2</option>
                                         <option>Ward-3</option>
                                       </select>
                                 </div>
+
                                 <div class="col-12">
                                     <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Bill Id" autocomplete="off">
+                                        <input type="text" class="form-control bill_id" placeholder="Bill Id" autocomplete="off">
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Holding Number" autocomplete="off">
+                                        <input type="text" class="form-control holding_number" placeholder="Holding Number" autocomplete="off">
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Name" autocomplete="off">
+                                        <input type="text" class="form-control user_name" placeholder="Name" autocomplete="off">
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="gardian_radio_wrapper">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="father" value="option1" autocomplete="off" name="radioOptions">
+                                            <input class="form-check-input" type="radio" id="father" value="option1" autocomplete="off" name="gardianRadio">
                                             <label class="form-check-label" for="fathers">Father Name</label>
                                         </div>
                                         <div class="form-check ">
-                                            <input class="form-check-input" type="radio" id="husband" value="option2" autocomplete="off" name="radioOptions">
+                                            <input class="form-check-input" type="radio" id="husband" value="option2" autocomplete="off" name="gardianRadio">
                                             <label class="form-check-label" for="husband">Husband Name</label>
                                         </div>
                                         <div class="input-group">
-                                            <input type="text" class="form-control" placeholder="Father/Husband Name  " autocomplete="off">
+                                            <input type="text" class="form-control gardian_name" placeholder="Father/Husband Name  " autocomplete="off">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Mother Name" autocomplete="off">                                 
+                                        <input type="text" class="form-control mother_name" placeholder="Mother Name" autocomplete="off">                                 
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -186,26 +188,26 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="NID NO" autocomplete="off">                                 
+                                        <input type="text" class="form-control nid_no" placeholder="NID NO" autocomplete="off">                                 
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Mobile Number" autocomplete="off">                                 
+                                        <input type="text" class="form-control mobail_number" placeholder="Mobile Number" autocomplete="off">                                 
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <div class="poperty_qality_radio">
+                                    <div class="poperty_quality_radio">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="home" value="option1" autocomplete="off" name="radioOptions">
+                                            <input class="form-check-input" type="radio" id="home" value="option1" autocomplete="off" name="popertyRadio">
                                             <label class="form-check-label" for="home">Home</label>
                                         </div>
                                         <div class="form-check ">
-                                            <input class="form-check-input" type="radio" id="shop" value="option2" autocomplete="off" name="radioOptions">
+                                            <input class="form-check-input" type="radio" id="shop" value="option2" autocomplete="off" name="popertyRadio">
                                             <label class="form-check-label" for="shop">Shop</label>
                                         </div>
                                         <div class="input-group">
-                                            <select class="form-select">
+                                            <select class="form-select poperty_quality " autocomplete="off">
                                                 <option selected="">Home/Shop Qality</option>
                                                 <option>Good</option>
                                                 <option>Bad</option>
@@ -215,47 +217,31 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Numbers Of Rooms" autocomplete="off"> 
+                                        <input type="text" class="form-control room_count" placeholder="Numbers Of Rooms" autocomplete="off"> 
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Annual Evalution" autocomplete="off"> 
+                                        <input type="text" class="form-control annual_evalution" placeholder="Annual Evalution" autocomplete="off"> 
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Tax levied" autocomplete="off"> 
+                                        <input type="text" class="form-control tax_levied" placeholder="Tax levied" autocomplete="off"> 
                                     </div>
-                                </div>
+                                </div> 
                                 <div class="col-12">
                                     <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Last tax payment year" autocomplete="off"> 
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Arrears Information" autocomplete="off"> 
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Current Total Dues" autocomplete="off"> 
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Current year due" autocomplete="off"> 
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="All totals are receivable" autocomplete="off"> 
+                                        <input type="text" class="form-control last_tax_pay" placeholder="Last tax payment year" autocomplete="off"> 
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="submit_from_btn">
                                         <button class="submit_btn" type="submit">Submit</button>
+                                        <button class="btn btn-primary loading" type="button" disabled>
+                                            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                            Loading...
+                                        </button>
                                     </div>
                                 </div>
                             </form>
@@ -268,13 +254,8 @@
                 </div>              
             </div>
             <div class="container">
-                <table class="table " id="showInputData" >
+                <table class="table table-striped" id="showInputData" >
                     <tbody>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td colspan="2">Larry the Bird</td>
-                            <td>@twitter</td>
-                          </tr>
                     </tbody>
                 </table>
             </div>

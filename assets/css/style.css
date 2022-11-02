@@ -484,4 +484,20 @@ color: #6f7880;
   margin-bottom: 8px;
   font-weight: 400;
 }
+.invalid_border{
+  border-color: red !important;
+  color: red !important;
+}
+.invalid_border::placeholder{
+  color: red !important;
+}
+#showInputData tr td {
+  text-transform: capitalize;
+}
+#showInputData > tbody {
+  border: 1px solid #ddd;
+}
+.loading{
+  display: none;
+}
 /* Pay Information End */
