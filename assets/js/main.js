@@ -1,11 +1,13 @@
-let paying_taxes_form = document.querySelector("#paying_taxes form")
+let paying_taxes_form = document.forms["payInformation"]
 let form_selects = document.querySelectorAll(".form-select")
 // "Bill Type" || "Select Your Distic" || "Select Upozila" || "Select Union" || "Select Ward" || "Home/Shop Qality"
 paying_taxes_form.addEventListener("submit", (e) => {
     e.preventDefault()
     inputSelect()
 })
+
 let showInputData = document.querySelector("#showInputData tbody")
+let tabel = document.querySelector("#showInputData")
 
 let loading = document.querySelector(".loading")
 let bill_type = document.querySelector(".bill_type")
@@ -147,7 +149,6 @@ function inputSelect() {
         store["mobil_number"] = mobail_number.value
         mobail_number.classList.remove("invalid_border")
     }
-    poperty_qality
 
     // gardian here
     if (poperty_qality.value == "Home/Shop Qality") {
@@ -271,8 +272,10 @@ function inputSelect() {
     else {
         loading.style.display = "block"
         showInputData.innerHTML = ''
+        tabel.style.display = "none"
         setTimeout(() => {
             showInputDataInTabel(store)
+            tabel.style.display = "inline-table"
             bill_type.value = "Bill Type"
             distic.value = "Select Your Distic"
             upozila.value = "Select Upozila"
@@ -306,6 +309,8 @@ function showInputDataInTabel(props) {
         showInputData.innerHTML += `<tr>
                                         <td>${value}</td>
                                         <td colspan="2">${props[value]}</td>
+
+
                                     </tr>`
     }
 }

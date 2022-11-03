@@ -494,10 +494,28 @@ color: #6f7880;
 #showInputData tr td {
   text-transform: capitalize;
 }
-#showInputData > tbody {
+
+#showInputData {
   border: 1px solid #ddd;
 }
 .loading{
   display: none;
 }
-/* Pay Information End */
+#showInputData thead tr td {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+#showInputData thead  {
+  border-bottom: none;
+}
+.pay_information select.form-select{
+  margin-bottom: 12px;
+}
+.pay_information .input-group input{
+  margin-bottom: 12px;
+}
+.form-check-input:focus{
+  box-shadow: none;
+}
+/* Pa Information End */
